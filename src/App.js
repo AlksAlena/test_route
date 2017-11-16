@@ -15,10 +15,7 @@ export default class App extends Component {
 				<nav className="app-menu">
 					<ul className="menu-bar">
 						<li className="menu-item">
-							<Link className="menu-item-link home-link" to='/'>Portfolio</Link>
-						</li>
-						<li className="menu-item">
-							<Link className="menu-item-link main-link" to='/test_route'>Main page app</Link>
+							<Link className="menu-item-link home-link" to='/test_route'>Home page</Link>
 						</li>
 						<li className="menu-item">
 							<Link className="menu-item-link" to='/test_route/contacts'>ContactsList</Link>
