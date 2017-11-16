@@ -1,0 +1,37 @@
+@import "styles/palette.less";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.app {
+  background-color: @card-background-color;
+  width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  .menu-bar {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: @primary-color;
+    box-sizing: border-box;
+    list-style-type: none;
+  }
+  .menu-item-link {
+    display: inline-block;
+    font-size: 17px;
+    padding: 16px;
+    color: @contrast-text-color;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .menu-item-link:hover {
+    background-color: darken(@primary-color, 10%);
+  }
+  .content {
+    height: 100%;
+  }
+}
