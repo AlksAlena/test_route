@@ -15,16 +15,22 @@ export default class App extends Component {
 				<nav className="app-menu">
 					<ul className="menu-bar">
 						<li className="menu-item">
-							<Link className="menu-item-link" to='/contacts'>ContactsList</Link>
+							<Link className="menu-item-link home-link" to='/'>Portfolio</Link>
 						</li>
 						<li className="menu-item">
-							<Link className="menu-item-link" to='/notes'>NotesApp</Link>
+							<Link className="menu-item-link main-link" to='/test_route'>Main page app</Link>
 						</li>
 						<li className="menu-item">
-							<Link className="menu-item-link" to='/timer'>Timer</Link>
+							<Link className="menu-item-link" to='/test_route/contacts'>ContactsList</Link>
 						</li>
 						<li className="menu-item">
-							<Link className="menu-item-link" to='/route'>RouterApp</Link>
+							<Link className="menu-item-link" to='/test_route/notes'>NotesApp</Link>
+						</li>
+						<li className="menu-item">
+							<Link className="menu-item-link" to='/test_route/timer'>Timer</Link>
+						</li>
+						<li className="menu-item">
+							<Link className="menu-item-link" to='/test_route/route'>RouterApp</Link>
 						</li>
 					</ul>
 				</nav>	
@@ -33,10 +39,10 @@ export default class App extends Component {
 					<h1>Welcome to training Router App</h1>
 					
 					<Switch>
-						<Route path="/contacts" component={ContactsList} />
-						<Route path="/notes" component={NotesApp} />
-						<Route path="/timer" component={Timer} />
-						<Route path="/route" component={RouteApp} />
+						<Route path="/test_route/contacts" component={ContactsList} />
+						<Route path="/test_route/notes" component={NotesApp} />
+						<Route path="/test_route/timer" component={Timer} />
+						<Route path="/test_route/route" component={RouteApp} />
 					</Switch>
 				</section>				
 			</div>			
