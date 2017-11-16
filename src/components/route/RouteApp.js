@@ -10,16 +10,16 @@ export default class RouteApp extends Component {
       <div>
         <ul className="menu-bar">
           <li className="menu-item">
-            <Link className="menu-item-link" to='/route/about'>About</Link>
+            <Link className="menu-item-link" to='/test_route/route/about'>About</Link>
           </li>
           <li className="menu-item">
-            <Link className="menu-item-link" to='/route/inbox'>Inbox</Link>
+            <Link className="menu-item-link" to='/test_route/route/inbox'>Inbox</Link>
           </li>
         </ul>
         
         <Switch>
-          <Route path='/route/about' component={AboutPage} />
-          <Route path='/route/inbox' component={InboxPage} />
+          <Route path='/test_route/route/about' component={AboutPage} />
+          <Route path='/test_route/route/inbox' component={InboxPage} />
         </Switch>
       </div>
     );
